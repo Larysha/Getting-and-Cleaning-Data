@@ -1,0 +1,35 @@
+---
+title: "codebook"
+author: "Larysha"
+date: "06/08/2020"
+output: html_document
+---
+
+### 1. Download the data
+#### + Download the data ad extract it in the `UCI HAR Dataset`
+
+### 2. Read and assign the data text files to vairiables 
+#### + dataActivityTest  <- Y_test.txt
+#### + dataActivityTrain <- Y_train.txt
+#### + dataSubjectTrain <- subject_train.txt
+#### + dataSubjectTest  <- subject_test.txt
+#### + dataFeaturesTest  <- X_test.txt
+#### + dataFeaturesTest  <- X_test.txt
+#### + dataFeaturesTrain <- X_train.txt
+
+### 3. Merge the train and test data sets into a single data set
+#### + Produce 1 data set for activity, features and subject by merging the data set by row (using rbind)
+#### + Combine the activity, subject and features data by column to get one single data frame `Data`
+
+### 4. Subset the data according to the mean and standard deviation from the feature names 
+##### + Updated `Data` to reflect only these values (as well as activities and subjects)
+
+### 5. Replace the activity vectors with descriptive names
+#### + 6 levels: standing; walking; sitting; laying; walking_downstairs; walking_upstairs 
+
+### 6. Label `Data` with more descriptive variable names 
+#### + Use gsub to substitute the original names with new names
+
+### 7. Create an independant tidy data set `tidydata.txt` 
+#### + A summary of Data by calculating the mean of each variable 
+
